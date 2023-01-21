@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciblage CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="bouttons">
+
+        <p >Chaque boutons utilise une regle de ciblage css differente.Utilisez les et observez l application sur la page web a droite.</p>
+        <div class="test">
+            <p>cible tous les elements html de la page.</p>
+            <div class="btn">*</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements h1 de la page.</p>
+            <div class="btn">h1</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements h2 de la page.</p>
+            <div class="btn">h2</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements h1 et h2 de la page.</p>
+            <div class="btn">h1,h2</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements p suivant directement un element h2.</p>
+            <div class="btn">h2+p</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements p suivant directement un element p qui lui meme suit directement un element h2.</p>
+            <div class="btn">h2+p+p</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements a fils direct d element p.</p>
+            <div class="btn">p > a</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements html possedant l attribut id="introduction".</p>
+            <div class="btn">#introduction</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements html possedant l attribut class="section".</p>
+            <div class="btn">.section1</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements html a contenu dans un element p.</p>
+            <div class="btn">p a</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements html a de la page.</p>
+            <div class="btn">a</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements a premier fils des elements p dans la page.</p>
+            <div class="btn">p a:nth-child(1)</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements a dernier fils des elements p dans la page.</p>
+            <div class="btn">p a:last-Child</div>
+        </div>
+        <div class="test">
+            <p>cible tous les elements a premier fils des elements p dans la page.</p>
+            <div class="btn">p a:first-Child</div>
+        </div>
+    </section>
+
+
+    <section class="dotedborder">
+        <h1 class="dotedborder">Titre principal de la page WEBDEV237 <span>h1</span></h1>
+        <p class="dotedborder" id="introduction">Introduction <span>p</span></p>
+        <a class="dotedborder" href="#">simple lien hors de paragraphe <span>a</span></a>
+        <h2  class="dotedborder section1">Sous titre nr 1 <span>h2</span></h2>
+        <p class="dotedborder section1">texte du paragraphe 1 <span>p</span></p>
+        <p class="dotedborder section1">texte du paragraphe 2 <span>p</span></p>
+        <h2 class="dotedborder">Sous titre nr 2 <span>h2</span></h2>
+        <p class="dotedborder">texte du paragraphe 1 <span>p</span></p>
+        <p class="dotedborder">texte du paragraphe 2 <a class="dotedborder" href="#">premier lien <span>a</span></a> <span>p</span> ou bien <a class="dotedborder" href="#">second lien <span>a</span></a></p>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
