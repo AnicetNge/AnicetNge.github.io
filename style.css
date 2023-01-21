@@ -36,8 +36,7 @@ div.btn:hover{
     width: 120px;
     font-size: large;
     margin: 10px;
-    border-color: greenyellow;
-    border: 2px solid greenyellow;
+    background-color: greenyellow;
     border-radius: 5px;
 }
 .visibleBorder{
